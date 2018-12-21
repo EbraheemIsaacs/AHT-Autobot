@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>aht-autobot | v.0.0.1</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../extras/nprogress/nprogress.css" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;" id="menu">
+                  <span class="profile_pic clearfix" aria-expanded="false" aria-hiden="true">                
+		    <a><img src="../images/amzn-logo.png" class="img-circle profile_img" style="align: left; margin-left: 80px"></a> <h3 class="text-center" style="margin-left: 47px">aht-autobot</h3>
+		  </span>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+
+              </div>
+              <div class="profile_info">
+                
+              </div> 
+            </div>
+            <!-- /menu profile quick info -->
+<hr>
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                
+                <ul class="nav side-menu">
+                  <li><a>Future Admin Automisation</a>
+                    <ul class="nav child_menu">
+                      <li>
+		     <a href="javascript:;">
+                        <span class="label label-success pull-right">coming soon!</span>
+                        <span>Calendar & DatePicker</span>
+                      </a></li>
+                      <li>
+		     <a href="javascript:;">
+                        <span class="label label-success pull-right">coming soon!</span>
+                        <span>QuickNotes</span>
+                      </a>
+			</li>
+                      <li>
+		     <a href="javascript:;">
+                        <span class="label label-success pull-right">coming soon!</span>
+                        <span>ContactID Storage Database</span>
+                      </a></li>
+                    </ul>
+                
+                </li>
+<ul class="nav side-menu">
+                  <li><a>Documentation</a>
+                    <ul class="nav child_menu">
+                      <li>
+		     <a href="javascript:;">
+                        <span class="label label-success pull-right">coming soon!</span>
+                        <span>My best practices</span>
+                      </a></li>
+                      <li>
+		     <a href="javascript:;">
+                        <span class="label label-success pull-right">coming soon!</span>
+                        <span>About this Application</span>
+                      </a>
+			</li>
+                      
+                    </ul>
+              </div>
+
+            </div>
+           
+          </div>
+        </div>
+<!-- /menu footer buttons --> 
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!--Tabs-->
+<h2> A simple Template Fetching Application</h2>
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Template App</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Additional Text Area</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">QuickNotes</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">ContactID DB</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+<!--Test Table In Tab-->
+        <!--h3 class="text-center">Email Templates</h3-->
+
+            
+</br></br></br>
+
+<!--Table-->
+<div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                <!--  <h2>Creat, Edit, Delete or Save <small>Templates for quicker carrier feedback wrap-up's and responses to customers. </small></h2>-->
+                  <div class="form-group">
+
+
+
+                    <div class="col-md-12 col-sm-9 col-xs-12">
+
+<table class="col-md-12">
+    <tr><td>Create and Save a Template Here:</td>
+
+</tr>
+
+<tr>
+<td><button class="btn btn-sm btn-warning" style="margin-bottom: 10px;" onclick="ClearFields();" data-toggle="tooltip" title="This button clears the shit you added in the text area">Clear</button></td>
+
+</tr>
+<br/> <br/>
+    <tr>
+        <td colspan="3" style="color: black;">
+            <textarea class="resizable_textarea form-control" id="inputTextToSave" placeholder="Do something crazy here!" cols="125" rows="25"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>Create a name for the template:</td>
+        <td><input id="inputFileNameToSaveAs" placeholder="Template Name"></input></td>
+        <td><button class="btn btn-sm btn-primary" onclick="saveTextAsFile()">Save</button></td>
+
+    </tr>
+    <tr>
+        <td>Fetch a template:</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><button class="btn btn-sm btn-success" onclick="loadFileAsText()">Load</button><td>
+
+    </tr>
+
+</table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--/Table-->
+
+</br>
+	
+
+
+<!--/Test Table In Tab-->
+</div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+<h1>Text Editor</h1>
+<p>Store your (on-the-call) information here when needed.</p>
+
+
+<textarea class="resizable_textarea form-control" id="inputTextToSave" placeholder="Do something crazy here!" cols="125" rows="25"></textarea>
+<h1>Quick WrapUp for no action on Carrier Feedback emails.</h1>
+<p>
+General carrier Feedback / no csa action required
+</p>
+<p>
+General carrier feedback / not enough information provided for csa action 
+</p>
+<p>
+General carrier feedback / carrier acknowledgement of receipt of email only  / no csa action required</p>
+</div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+<div class="col-md-12 jumbotron text-center">
+<h1>QuickNotes</h1>
+<hr>
+<h2>This section is <span class="alert-info">coming soon</span></h2>
+
+
+</div>
+</div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+<div class="col-md-12 jumbotron text-center">
+<h1>ContactID Storage Database</h1>
+<hr>
+<h2>This section is <span class="alert-info">coming soon</span></h2>
+
+
+</div>
+</div>
+  </div>
+
+</div>
+<!--/Tabs-->
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="footer_fixed pull-right">
+            aht-autobot - designed by <a href="https://about.me/ebraheemisaacs/">Ebraheem I Isaacs</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../extras/nprogress/nprogress.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+
+<script>
+function saveTextAsFile()
+{
+    var textToSave = document.getElementById("inputTextToSave").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+ 
+    downloadLink.click();
+}
+ 
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
+ 
+function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+ 
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) 
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("inputTextToSave").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+ 
+function ClearFields() {
+
+     document.getElementById("inputTextToSave").value = "";
+     
+}
+</script>
+
+  </body>
+</html>
+
